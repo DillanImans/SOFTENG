@@ -1,0 +1,171 @@
+.ReportViewPage-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 18vh;
+  padding-right: 18vh;
+}
+
+.ReportViewInside-wrapper {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.ReportViewHeader-wrapper{
+  height: 15%;
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ReportViewStudent-wrapper{
+  display: flex;
+  height: 15%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ReportViewStudentName-wrapper{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ReportViewName-text {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ReportViewName-bar {
+  height: 5vh;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.ReportViewStudentId-wrapper{
+  width: 50%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  padding-left: 80px;
+}
+
+.ReportViewStudentId-text {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ReportViewStudentId-bar {
+  height: 5vh;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.ReportViewTitle-wrapper {
+  height: 15%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.ReportViewTitle-text {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ReportViewTitle-bar {
+  height: 5vh;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.ReportViewDetails-wrapper {
+  height: 40%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.ReportViewDetails-text{
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ReportViewDetails-bar {
+  height: 80%;
+  border: none;
+  text-align: left;
+  background-color: rgb(240, 240, 240);
+  padding-left: 10px;
+  padding-top: 0;
+  margin-top: 5px;
+  overflow-y: auto;
+}
+
+.ReportViewCloseButton-wrapper{
+  height: 15%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+}
+
+.ReportViewCloseButton-button{
+  background-color: rgb(0, 108, 24);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  height: 6vh;
+  width: 16vh;
+  border-radius: 8px;
+  transition: opacity 0.15s;
+}
+
+.ReportViewCloseButton-button:hover{
+  cursor: pointer;
+}
+
+.ReportViewCloseButton-button:active{
+  opacity: 0.8;
+}
+
+
+
+.rv-p {
+  word-spacing: 3px;
+}
+
+.rv-h1 {
+  color: var(--black);
+  font-size: 30px;
+  text-align: center;
+  word-spacing: 5px;
+}

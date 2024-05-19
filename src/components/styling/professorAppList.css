@@ -1,0 +1,76 @@
+.applicationProfessor-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.applicationProfessor-wrapper body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; /* Adjust this if needed for more outer spacing */
+    background-color: #f4f4f4;
+    height: 100%;
+    width: 100%;
+}
+
+.applicationProfessor-panel {
+    background-color: white;
+    width: 90%; /* Increased width from 90% to 95% */
+    padding: 40px; /* Increased padding for a larger boundary inside the panel */
+    margin-left: 60px;
+    margin-top: 30px;
+    height: 90%;
+}
+
+.applicationProfessor-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Keeps the table distanced from the header inside the panel */
+}
+
+.applicationProfessor-wrapper th{
+    background-color: rgb(238, 238, 255);
+}
+
+.applicationProfessor-wrapper th, td {
+    text-align: left;
+    padding: 35px; /* Keeps cell padding unchanged to not affect content size */
+    border-bottom: 1px solid #ddd;
+}
+
+button.applicationProfessor-status {
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.applicationProfessor-accepted {
+    background-color: #4CAF50;
+}
+
+.applicationProfessor-accepted:hover {
+    background-color: #4CAF50;
+}
+
+.applicationProfessor-rejected {
+    background-color: #f44336;
+}
+
+.applicationProfessor-rejected:hover {
+    background-color: #f44336;
+}
+
+.applicationProfessor-ongoing {
+    background-color: #2196F3;
+}
+
+.applicationProfessor-ongoing:hover {
+    background-color: #2196F3;
+}

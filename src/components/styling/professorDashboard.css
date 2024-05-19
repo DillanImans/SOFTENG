@@ -1,0 +1,113 @@
+.profDashboard-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.profDashboard-wrapper body, html {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the HTML and body cover the full height of the viewport */
+  width: 100%;
+}
+
+.profDashboard-wrapper h2{
+  text-align: center;
+}
+
+.profDashboard-container {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto; /* Remove any horizontal margin */
+  padding: 0; /* Remove padding to make elements use full width */
+  background-color: #fff;
+}
+
+.profDashboard-wrapper header {
+  background-color: #4CAF50; /* Green header background */
+  color: white;
+  padding: 20px 0;
+  width: 100%; /* Ensure header covers full width */
+  height: 165px;
+}
+
+.profDashboard-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.profDashboard-header-image {
+  width: 150px; /* Adjust size as necessary */
+}
+
+.profDashboard-notifications, .profDashboard-main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 20px; /* Add padding here instead of on the container */
+}
+
+.profDashboard-notification-item {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.profDashboard-notification-item label {
+  font-weight: bold;
+}
+
+.profDashboard-count {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profDashboard-schedule {
+  flex: 3; /* Gives more flex space to schedule */
+  padding-right: 20px; /* Adds some right padding */
+}
+
+.profDashboard-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.profDashboard-schedule th, .profDashboard-schedule td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.profDashboard-schedule th {
+  background-color: #e0e0e0;
+}
+
+.profDashboard-reminders {
+  flex: 1; /* Reduced width for reminders */
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .profDashboard-header-content, .profDashboard-notifications, .profDashboard-main-content {
+      flex-direction: column;
+  }
+  .profDashboard-header-image, .profDashboard-notification-item, .profDashboard-reminders, .profDashboard-schedule {
+      width: 100%; /* Full width for mobile */
+  }
+  .profDashboard-schedule {
+      padding-right: 0; /* Remove padding in mobile view */
+  }
+}

@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { connect } from 'react-redux'
 import { currentLinkAction } from '../actions';
 
-import FreeComponent from './FreeComponent'
-
 import './styling/header.css';
 
 import bell from '../icons/bell.png'
@@ -15,7 +13,29 @@ import mail from '../icons/mail.png'
 import monitor from '../icons/monitor.png'
 import search from '../icons/search.png'
 
-class Header extends React.Component {
+
+// Portfolio Config
+import PortfolioConfiguration from './Portfolio-Configuration'
+
+// Student Search Labs
+import SearchLabs from './LabSearch'
+
+// Student Report Submission
+import StudentReportSubmission from './StudentReportSubmission'
+
+// Mail
+import Mail from './Mail'
+
+// Student Application List
+import StudentAppList from './StudentApplicationList'
+
+// Student Profile
+import StudentProfile from './StudentProfile'
+
+// Student Dashboard
+import StudentDashboard from './StudentDashboard'
+
+class StudentHeader extends React.Component {
 
   // (prefix with Student on everything) Profile, Mail, Search Labs, Application List, Portfolio Configuration, Dashboard, Report Submission
 
@@ -90,7 +110,7 @@ class Header extends React.Component {
   render(){
     return(
       // <Router>
-        <div className="wrapper">
+        <div className="header-wrapper">
           <div className="topbar">
 
             <div className="left-topbar">
@@ -133,14 +153,14 @@ class Header extends React.Component {
                 <Link to="/student-appList" id="student-appList" onClick = {this.updateALLinkState} className="subtopic">
                   <img className="icon-st" src={monitor}/>
                   <p className="title-st">
-                    APPLICATION LIST
+                    APPLIC LIST
                   </p>
                 </Link>
 
                 <Link to="/student-portfolioConfig" id="student-portfolioConfig" onClick = {this.updatePCLinkState} className="subtopic">
                   <img className="icon-st" src={briefcase}/>
                   <p className="title-st">
-                    PORTFOLIO CONFIGURATION
+                    PORTFOLIO CONFIG
                   </p>
                 </Link>
 
@@ -171,14 +191,17 @@ class Header extends React.Component {
 
             <div className="main">
               <Routes>
-                  {/* <Route path="/student-profile" component={StudentProfile} />
-                  <Route path="/student-mail" component={StudentMail} />
-                  <Route path="/student-searchLabs" component={StudentSearchLabs} />
-                  <Route path="/student-appList" component={StudentAppList} />
-                  <Route path="/student-portfolioConfig" component={StudentPortfolioConfig} />
-                  <Route path="/student-dashboard" component={StudentDashboard} />
-                  <Route path="/student-reportSubmission" component={StudentReportSubmission} /> */}
-                  <Route path="/student-dashboard" element={<FreeComponent/>} />
+                  <Route path="/student-portfolioConfig" element={<PortfolioConfiguration/>} />
+
+                  <Route path="/student-searchLabs" element={<SearchLabs/>} />
+
+                  <Route path="/student-reportSubmission" element={<StudentReportSubmission/>} />
+
+                  <Route path="/student-mail" element={<Mail />} />
+                  <Route path="/student-appList" element={<StudentAppList/>}/>
+                  <Route path="/student-profile" element={<StudentProfile/>} />
+                  <Route path="/student-dashboard" element={<StudentDashboard/>} />
+
                 </Routes>
             </div>
 
@@ -193,4 +216,4 @@ const mapStateToProps = (state) => {
   return { currentLinkState: state.currentLinkState }
 }
 
-export default connect(mapStateToProps, { currentLinkAction })(Header)
+export default connect(mapStateToProps, { currentLinkAction })(StudentHeader)

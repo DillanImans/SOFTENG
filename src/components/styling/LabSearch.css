@@ -1,0 +1,152 @@
+.FreeComponentPage-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  background-color: white;
+}
+
+.ls-h1 {
+  color: var(--green);
+  font-size: 40px;
+  text-align: center;
+}
+
+.searchLabs {
+  background-color: white;
+  border-radius: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.search{
+  display: flex;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.searchForm {
+  width: 100%;
+  display: flex;
+}
+
+.major {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.options {
+  margin-top: 20px;
+  flex: 4;
+}
+
+.searchIcon {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchIconButton {
+  width: 50%;
+}
+
+select {
+  width: 80%;
+  font-size: 1.1rem;
+  margin: 10px 0px;
+  padding: 0.5em 5em 0.5em 1em;
+  background-color: whitesmoke;
+  border: 1px solid;
+  color: dimgray;
+  border-radius: 0.5rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-container label p {
+  margin: 0;
+  margin-right: 10px;
+}
+
+hr.solid {
+  border-top: 2px solid #bbb;
+}
+
+.results {
+  background-color: white;
+  position: relative;
+  margin: 1rem;
+  height: auto;
+  padding-bottom: 5rem;
+}
+
+ul {
+  padding-top: 0.5rem;
+}
+
+li {
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  padding: 1rem;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+}
+
+li img {
+  margin-right: 1rem;
+  width: 100px;
+}
+
+li .professorDetails {
+  color: black;
+  flex: 1;
+}
+
+li .professorDetails p:nth-child(even) {
+  font-size: 1.5rem;
+}
+
+li .professorDetails p:last-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+li .labInfo {
+  flex: 2;
+}
+
+li .specificInfo {
+  flex: 1;
+}
+
+li .specificInfo p:nth-child(odd) {
+  color: black;
+  font-weight: bold;
+}
+
+li .specificInfo p:nth-child(even) {
+  margin-bottom: 10px;
+}
+
+li button {
+  background-image: url(../../icons/hamburger.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+  height: 100px;
+  width: 10%;
+  background-color: whitesmoke;
+}
+

@@ -1,0 +1,59 @@
+.reportSubmission-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.reportSubmission-wrapper body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0; /* Adjust this if needed for more outer spacing */
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 100%;
+}
+
+.reportSubmission-panel {
+  background-color: white;
+  width: 90%; /* Increased width from 90% to 95% */
+  padding: 40px; /* Increased padding for a larger boundary inside the panel */
+  margin-left: 60px;
+  margin-top: 30px;
+  height: 90%;
+}
+
+.reportSubmission-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Keeps the table distanced from the header inside the panel */
+}
+
+.reportSubmission-wrapper th{
+  background-color: rgb(238, 238, 255);
+}
+
+.reportSubmission-wrapper th, td {
+  text-align: left;
+  padding: 35px; /* Keeps cell padding unchanged to not affect content size */
+  border-bottom: 1px solid #ddd;
+}
+
+.reportSubmission-wrapper button{
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
+  width: 70%;
+  background-color: #006C18;
+  color: white;
+  height: 100%;
+}
+
+.reportSubmission-wrapper button:hover {
+  opacity: 0.9;
+}

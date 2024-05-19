@@ -1,0 +1,92 @@
+body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.sal-container {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.sal-h1 {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.section h2 {
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: right;
+}
+
+.accepted h2 {
+    color: #4CAF50;
+}
+
+.rejected h2 {
+    color: #808080;
+}
+
+.sal-application {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.application:last-child {
+    border-bottom: none;
+}
+
+.icon-professor {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.details span, .details strong, .details em {
+    margin-right: 10px;
+}
+
+.details span {
+    display: flex;
+}
+
+.details strong {
+    display: block;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.details em {
+    color: #666;
+    font-style: normal;
+}
+
+.details {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+}

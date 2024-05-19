@@ -8,7 +8,7 @@ p {
   color: var(--green);
 }
 
-.wrapper {
+.header-wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -51,7 +51,9 @@ p {
 .rtb-title {
   justify-content: center;
   align-items: center;
-  color: var(--green)
+  color: var(--green);
+  position: relative;
+  right: 30px;
 }
 
 
@@ -66,6 +68,8 @@ p {
   flex-direction: column;
   height: 92vh;
   border-right: 1px solid lightgray;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 
 /* Lab Searching */
@@ -98,6 +102,7 @@ p {
   position: relative;
   top: 1px;
   padding-left: 12px;
+  font-size: 18px;
 }
 
 .labManagementList {
@@ -119,11 +124,17 @@ p {
 }
 
 .subtopic:hover {
-  font-weight:bold;
+  font-weight:bolder;
 }
 
 .subtopic:hover p {
-  transform: scale(1.1);
   display: inline-block;
   transition: transform 0.1s ease-in-out
+}
+
+
+.List {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
